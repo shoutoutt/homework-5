@@ -47,6 +47,9 @@ button
 .container
     width: 1200px
     margin: 0 auto
+@media (min-width: 768px) and (max-width: 1199px)
+  .container
+    width: 740px
 .header
     display: flex
     justify-content: space-between
@@ -177,8 +180,7 @@ button
 // about
 .about
   position: relative
-  padding-top: 128px
-  padding-bottom: 112px
+  padding: 128px 653px 112px 0
   &__title
     font-family: 'Poppins'
     font-style: normal
@@ -188,31 +190,14 @@ button
     letter-spacing: 1px
     color: #4E4B66
     padding-bottom: 48px
-  &__description1
-    width: 547px
-    left: 2px
-    font-family: 'Poppins'
-    font-style: normal
+  &__description
+    font: 18px/34px 'Poppins'
     font-weight: 400
-    font-size: 18px
-    line-height: 34px
-    letter-spacing: 0.75px
-    color: #4E4B66
-    padding-bottom: 48px
-  &__description2
-    width: 547px
-    left: 2px
-    font-family: 'Poppins'
-    font-style: normal
-    font-weight: 400
-    font-size: 18px
-    line-height: 34px
     letter-spacing: 0.75px
     color: #4E4B66
     padding-bottom: 48px
   &__logotypes-box
     display: flex
-    padding-bottom: 112px
   &__logo1
     width: 114px
     height: 48px
@@ -289,3 +274,11 @@ button
     &:hover
       color: $color7
       transition: 0.5s
+@media (min-width: 768px) and (max-width: 1199px)
+  .about 
+    padding-right: calc(48% + 45px)
+    &__animation
+      width: 48%
+      height: 48%
+      left: 400px
+      top: 200px
